@@ -25,30 +25,31 @@
 */
 
 // let test; // Deklaration
+// console.log("Datentyp: " + typeof test); // datentyp wird angezeigt
+// console.log("Inhalt: " + test); // inhalt wird angezeigt 
+// console.log("-------------");     // Trennstrich 
+// test = "hello"; // Datentyp string
 // console.log("Datentyp: " + typeof test);
 // console.log("Inhalt: " + test);
 // console.log("-------------");
-// test = "hello"; // string
+// test = 2; // Datentyp number
 // console.log("Datentyp: " + typeof test);
 // console.log("Inhalt: " + test);
 // console.log("-------------");
-// test = 2; // number
-// console.log("Datentyp: " + typeof test);
-// console.log("Inhalt: " + test);
-// console.log("-------------");
-// test = true;
+// test = true; //Datentyp boolean  ( ein boolescher Wert False or true )
 // console.log("Datentyp: " + typeof test);
 // console.log("Inhalt: " + test);
 
 /* Variablen vs. Konstanten in JS */
 
 // Variable
-let test;  // Variable : Deklaration
+let test;  // Variable : Deklaration   eine Variable lässt sich imme im nachhinein überschreiben
 test = "hi"; // Wertzuweisung (Initialisierung)
 test = "hello"; // Überschreiben
 console.log("Inhalt: " + test); // Ausgabe
 
-// Konstante
+//Konstante
 const test2 = "Hi!";  // Deklaration + Wertzuweisung gemeinsam !
-test2 = "Hello!"; // Laufzeitfehler !!
+test2 = "Hello!"; // Laufzeitfehler !! ein versuch es zu überschreiben  eine konstante Variable kann nicht erneut überschrieben werde
 console.log("Inhalt: " + test2); // Ausgabe
+
