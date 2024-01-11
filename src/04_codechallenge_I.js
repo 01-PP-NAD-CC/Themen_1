@@ -15,7 +15,7 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 //let summe = ersteZahl + zweiteZahl
 //console.log(summe) 
 
-const prompt = require('prompt-sync')({sigint: true});
+// const prompt = require('prompt-sync')({sigint: true});
 
 /*********** Variante 1  ****************/
 // Vorteil: gute Lesbarkeit | aber viele Variablen
@@ -55,12 +55,12 @@ const prompt = require('prompt-sync')({sigint: true});
 /*********** Variante 3  ****************/
 // Kompakt, aber schlechter lesbar, unflexibel
 
-console.log
-(
-    "Die Summe ist: " + 
-   (
-    parseFloat(prompt("Bitte Zahl 1 eingeben ")) +
-    parseFloat(prompt("Bitte Zahl 2 eingeben "))
-   ) 
-);
+// console.log
+// (
+//     "Die Summe ist: " + 
+//    (
+//     parseFloat(prompt("Bitte Zahl 1 eingeben ")) +
+//     parseFloat(prompt("Bitte Zahl 2 eingeben "))
+//    ) 
+// );
 
