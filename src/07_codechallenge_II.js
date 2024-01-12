@@ -15,6 +15,7 @@ Alter 13-17 // Cola
 -->zB: "Max trinkt Cola."
 
 /* Getränke-Challenge */
+
 const prompt = require('prompt-sync')({sigint: true});
 
 
@@ -24,7 +25,7 @@ const age =  parseInt(prompt("Bitte Alter eingeben:")); // "2" --> 2
 // console.log(age);
 
 switch (true) {
-    case (age >= 0) && (age <= 5) :
+    case (age >= 0) && (age <= 5) :           // && = and,  || = or, ! = not
         console.log(firstName + " trinkt Milch.");
         break;
     case (age >= 6) && (age <= 12):
