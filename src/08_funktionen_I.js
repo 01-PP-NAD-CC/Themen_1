@@ -75,7 +75,7 @@ function getString(firstName, familyName) {
  const GAP = " ";
  let outputStr = "Hallo, " + firstName + GAP + familyName + "!" 
  return outputStr;   //ausgabe der daten   // Return = exit aus dem scope
- console.log("HI")
+ console.log("HI") // Return bricht funkion ab alles nachfolgende wird nicht mehr beachtet
 }
 
 
