@@ -5,12 +5,54 @@
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
 1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
+2. Auswahl Rechenart : check
 3. Fkt. Grundrechenarten : check
 4. Ausgabe in Konsole : check
 */
+const ERROR_STR_DIV = "nicht Teilbar";
+const ERROR_STR_GEN = "ERROR";
+const prompt = require('prompt-sync')({sigint: true});
 
-const ERROR_STR_DIV = "division durch 0 ist nicht möglich";
+startApp();
+function startApp() {
+	output(calculator(getNum1(),getNum2(),getop()));	
+}
+function getNum1() {
+	return parseInt (prompt("Zahl1?: "));
+}
+function getNum2() {
+	return parseInt (prompt("Zahl2?: "));
+}
+function getop() {
+	return prompt("OP?: ");
+}
+// module: calculator | tests:
+// agreement : "+","-","*",":","/"
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
+
+
+function calculator(a,b,op) {
+		switch (op) {
+				case "+":          				// add
+						return add(a,b);         
+				case "-":          				// sub
+						return subtract(a,b);  
+				case "*":          				// mul
+						return  multiply(a,b);
+				case "/":          				// div
+				case ":":          				// div
+						return  divide(a,b);      
+				default:               			//ERROR
+						return ERROR_STR_GEN;	
+		}
+}
+
 
 // module: division a / b |  test:
 // output(divide(4,2));
