@@ -6,7 +6,7 @@
 
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
+3. Fkt. Grundrechenarten : check
 4. Ausgabe in Konsole : check
 */
 
@@ -18,6 +18,8 @@ const ERROR_STR_DIV = "division durch 0 ist nicht möglich";
 // output(divide(3,-2));
 // output(divide(0,2));
 // output(divide(3,0));
+
+//function divide(a, b) {   return b !== 0 ? a / b : ERROR_STR_DIV ; }  //Ternäre Version
 function divide(a,b) {
 
 	if (b == 0) {
